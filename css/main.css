@@ -1,20 +1,67 @@
-#container {
-  height: 100vh;
+.container {
+  height: 200vh;
   background-color: black;
   display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.scoreboard {
+  width: 100%;
+  display: flex;
+  margin-bottom: 50px;
+}
+
+.startModal {
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  top: 300px;
+  height: 200px;
+  width: 400px;
+  background-color: rgb(0, 140, 255);
+  padding: 20px;
+  z-index: 10;
+}
+
+.playerRegister {
+  display: flex;
+  gap: 10px;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 
-#table {
+.table {
   background-color: aliceblue;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
 }
 
 .square {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 50px;
   width: 200px;
   height: 200px;
   background-color: #fff;
   border: 2px solid #000;
 }
+
+.names {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 50px;
+  width: 200px;
+  height: 100px;
+  background-color: #fff;
+  border: 2px solid #000;
+}
+
+
+/* Utlity Classes */
+  .hidden {
+    display: none;
+  }

@@ -1,6 +1,7 @@
 .container {
   height: 200vh;
-  background-color: black;
+  padding-top: 16px;
+  background-color: #618985;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -9,7 +10,25 @@
 .scoreboard {
   width: 100%;
   display: flex;
+  padding-left: 24px;
   margin-bottom: 50px;
+}
+
+.players {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  width: 200px;
+  height: 100px;
+  background-color: #fff;
+  border: 2px solid #000;
+}
+
+.heading {
+  font-size: 30px;
+  margin-bottom: 16px;
+  color: #F2E3BC
 }
 
 .modal {
@@ -19,13 +38,43 @@
   position: absolute;
   text-align: center;
   top: 300px;
-  height: 200px;
+  height: 300px;
   width: 400px;
-  background-color: rgb(0, 140, 255);
+  background-color: #618985;
+  border: 8px solid #F2E3BC;
+  border-radius: 10px;
   padding: 20px;
   z-index: 10;
 }
 
+.playerInput {
+  background-color: #96BBBB;
+  border: 5px solid #F2E3BC;
+  border-radius: 5px;
+}
+
+.playerInput::placeholder {
+  color:#414535;
+  font-weight: bold;
+  padding-left: 5px;
+}
+.playerInput:focus {
+  outline: none;
+}
+.btn {
+  background-color: #414535;
+  color:#F2E3BC;
+  border: 2px solid #F2E3BC;
+  border-radius: 10px;
+  padding: 5px 10px;
+  font-weight: 700;
+}
+
+.btn:hover {
+  cursor: pointer;
+  background-color: #c19875;
+  color: #414535;
+}
 
 .playerRegister {
   display: flex;
@@ -36,32 +85,26 @@
 }
 
 .table {
-  background-color: aliceblue;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
+  gap: 10px;
 }
 
 .square {
+  font-family: 'Water Brush', cursive;
+  color: #96BBBB;
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 50px;
+  font-size: 80px;
   width: 200px;
   height: 200px;
-  background-color: #fff;
-  border: 2px solid #000;
+  background-color: #414535;
+  border: 5px solid #C19875;
+  border-radius: 10px;
 }
 
-.players {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 50px;
-  width: 200px;
-  height: 100px;
-  background-color: #fff;
-  border: 2px solid #000;
-}
+
 
 
 /* Utlity Classes */
